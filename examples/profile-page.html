@@ -448,6 +448,23 @@
 
 
                     </p>
+                    <script>
+                      function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                          dots.style.display = "inline";
+                          btnText.innerHTML = "Read more";
+                          moreText.style.display = "none";
+                        } else {
+                          dots.style.display = "none";
+                          btnText.innerHTML = "Read less";
+                          moreText.style.display = "inline";
+                        }
+                      }
+                    </script>
 
                   </div>
 
@@ -476,6 +493,7 @@
                 </a>
               </div>
             </div>
+
           </div>
 
 
@@ -974,13 +992,33 @@
 
                     <p class="text-white">
                       GirlUp Udaan aims to help discriminated communities access their inner power to advance their
-                      skills, rights, and opportunities everywhere. By creating a safe and supportive space, organising
-                      social work and fundraisers, conducting interactive activities and discussions, and putting out
-                      informative and fun content on our social media, we aim to bring about a change- one step at a
-                      time.
+                      skills, rights, and opportunities everywhere. By creating a <span id="dotsgup">...</span><span
+                        id="moregup" style="display: none">safe and supportive space, organising
+                        social work and fundraisers, conducting interactive activities and discussions, and putting out
+                        informative and fun content on our social media, we aim to bring about a change- one step at a
+                        time.</span>
+                      <button class="btn btn-success btn-link btn-sm" onclick="myFunctiongup()" id="myBtngup">Read
+                        more</button>
 
 
                     </p>
+                    <script>
+                      function myFunctiongup() {
+                        var dots = document.getElementById("dotsgup");
+                        var moreText = document.getElementById("moregup");
+                        var btnText = document.getElementById("myBtngup");
+
+                        if (dots.style.display === "none") {
+                          dots.style.display = "inline";
+                          btnText.innerHTML = "Read more";
+                          moreText.style.display = "none";
+                        } else {
+                          dots.style.display = "none";
+                          btnText.innerHTML = "Read less";
+                          moreText.style.display = "inline";
+                        }
+                      }
+                    </script>
 
                   </div>
 
@@ -3664,23 +3702,7 @@
     </footer>
   </div>
   <!--   Core JS Files   -->
-  <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-  </script>
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
